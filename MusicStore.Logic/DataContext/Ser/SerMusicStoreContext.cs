@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace MusicStore.Logic.DataContext.Ser
 {
-    internal class SerMusicStoreContext : MusicStoreFileContext
+    internal partial class SerMusicStoreContext : MusicStoreFileContext
     {
         public SerMusicStoreContext()
         {
@@ -24,18 +24,5 @@ namespace MusicStore.Logic.DataContext.Ser
             SaveToSer(Tracks);
         }
         #endregion Sync-Methods
-
-        #region Async-Methods
-        public override Task SaveAsync()
-        {
-            return Task.Run(() =>
-            {
-                SaveToSer(Genres);
-                SaveToSer(Artists);
-                SaveToSer(Albums);
-                SaveToSer(Tracks);
-            });
-        }
-        #endregion Async-Methods
     }
 }

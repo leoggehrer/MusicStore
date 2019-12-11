@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MusicStore.Logic
+namespace MusicStore.Contracts.Client
 {
-	public interface IController<T> : IDisposable 
-        where T : Contracts.IIdentifiable
+    public interface IAdapterAccess<T> : IDisposable
     {
         #region Sync-Methods
         int Count();
@@ -13,9 +12,8 @@ namespace MusicStore.Logic
         T GetById(int id);
         T Create();
         T Insert(T entity);
-		void Update(T entity);
-		void Delete(int id);
-        void SaveChanges();
+        void Update(T entity);
+        void Delete(int id);
         #endregion Sync-Methods
 
         #region Async-Methods
@@ -26,7 +24,6 @@ namespace MusicStore.Logic
         Task<T> InsertAsync(T entity);
         Task UpdateAsync(T entity);
         Task DeleteAsync(int id);
-        Task SaveChangesAsync();
         #endregion Async-Methods
     }
 }

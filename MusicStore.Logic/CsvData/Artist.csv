@@ -4,7 +4,7 @@ Id;Name
 3;Aerosmith
 4;Alanis Morissette
 5;Alice In Chains
-6;Antônio Carlos Jobim
+6;AntÃ´nio Carlos Jobim
 7;Apocalyptica
 8;Audioslave
 9;BackBeat
@@ -16,9 +16,9 @@ Id;Name
 15;Buddy Guy
 16;Caetano Veloso
 17;Chico Buarque
-18;Chico Science & Nação Zumbi
+18;Chico Science & NaÃ§Ã£o Zumbi
 19;Cidade Negra
-20;Cláudio Zoli
+20;ClÃ¡udio Zoli
 21;Various Artists
 22;Led Zeppelin
 23;Frank Zappa & Captain Beefheart
@@ -26,14 +26,14 @@ Id;Name
 25;Milton Nascimento & Bebeto
 26;Azymuth
 27;Gilberto Gil
-28;João Gilberto
+28;JoÃ£o Gilberto
 29;Bebel Gilberto
 30;Jorge Vercilo
 31;Baby Consuelo
 32;Ney Matogrosso
 33;Luiz Melodia
 34;Nando Reis
-35;Pedro Luís & A Parede
+35;Pedro LuÃ­s & A Parede
 36;O Rappa
 37;Ed Motta
 38;Banda Black Rio
@@ -43,10 +43,10 @@ Id;Name
 42;Milton Nascimento
 43;A Cor Do Som
 44;Kid Abelha
-45;Sandra De Sá
+45;Sandra De SÃ¡
 46;Jorge Ben
 47;Hermeto Pascoal
-48;Barão Vermelho
+48;BarÃ£o Vermelho
 49;Edson, DJ Marky & DJ Patife Featuring Fernanda Porto
 50;Metallica
 51;Queen
@@ -63,19 +63,19 @@ Id;Name
 62;Santana Feat. Rob Thomas
 63;Santana Feat. Lauryn Hill & Cee-Lo
 64;Santana Feat. The Project G&B
-65;Santana Feat. Maná
+65;Santana Feat. ManÃ¡
 66;Santana Feat. Eagle-Eye Cherry
 67;Santana Feat. Eric Clapton
 68;Miles Davis
 69;Gene Krupa
-70;Toquinho & Vinícius
-71;Vinícius De Moraes & Baden Powell
-72;Vinícius De Moraes
-73;Vinícius E Qurteto Em Cy
-74;Vinícius E Odette Lara
+70;Toquinho & VinÃ­cius
+71;VinÃ­cius De Moraes & Baden Powell
+72;VinÃ­cius De Moraes
+73;VinÃ­cius E Qurteto Em Cy
+74;VinÃ­cius E Odette Lara
 75;Vinicius, Toquinho & Quarteto Em Cy
 76;Creedence Clearwater Revival
-77;Cássia Eller
+77;CÃ¡ssia Eller
 78;Def Leppard
 79;Dennis Chambers
 80;Djavan
@@ -95,21 +95,21 @@ Id;Name
 94;Jimi Hendrix
 95;Joe Satriani
 96;Jota Quest
-97;João Suplicy
+97;JoÃ£o Suplicy
 98;Judas Priest
-99;Legião Urbana
+99;LegiÃ£o Urbana
 100;Lenny Kravitz
 101;Lulu Santos
 102;Marillion
 103;Marisa Monte
 104;Marvin Gaye
 105;Men At Work
-106;Motörhead
-107;Motörhead & Girlschool
-108;Mônica Marianno
-109;Mötley Crüe
+106;MotÃ¶rhead
+107;MotÃ¶rhead & Girlschool
+108;MÃ´nica Marianno
+109;MÃ¶tley CrÃ¼e
 110;Nirvana
-111;O Terço
+111;O TerÃ§o
 112;Olodum
 113;Os Paralamas Do Sucesso
 114;Ozzy Osbourne
@@ -144,7 +144,7 @@ Id;Name
 143;The Tea Party
 144;The Who
 145;Tim Maia
-146;Titãs
+146;TitÃ£s
 147;Battlestar Galactica
 148;Heroes
 149;Lost
@@ -184,19 +184,19 @@ Id;Name
 183;Gustavo & Andres Veiga & Salazar
 184;Rodox
 185;Charlie Brown Jr.
-186;Pedro Luís E A Parede
+186;Pedro LuÃ­s E A Parede
 187;Los Hermanos
 188;Mundo Livre S/A
 189;Otto
 190;Instituto
-191;Nação Zumbi
+191;NaÃ§Ã£o Zumbi
 192;DJ Dolores & Orchestra Santa Massa
 193;Seu Jorge
 194;Sabotage E Instituto
 195;Stereo Maracana
 196;Cake
 197;Aisha Duo
-198;Habib Koité and Bamada
+198;Habib KoitÃ© and Bamada
 199;Karsh Kale
 200;The Posies
 201;Luciana Souza/Romero Lubambo
@@ -216,7 +216,7 @@ Id;Name
 215;Academy of St. Martin in the Fields Chamber Ensemble & Sir Neville Marriner
 216;Berliner Philharmoniker, Claudio Abbado & Sabine Meyer
 217;Royal Philharmonic Orchestra & Sir Thomas Beecham
-218;Orchestre Révolutionnaire et Romantique & John Eliot Gardiner
+218;Orchestre RÃ©volutionnaire et Romantique & John Eliot Gardiner
 219;Britten Sinfonia, Ivor Bolton & Lesley Garrett
 220;Chicago Symphony Chorus, Chicago Symphony Orchestra & Sir Georg Solti
 221;Sir Georg Solti & Wiener Philharmoniker
@@ -239,9 +239,9 @@ Id;Name
 238;Maurizio Pollini
 239;Academy of St. Martin in the Fields, Sir Neville Marriner & William Bennett
 240;Gustav Mahler
-241;Felix Schmidt, London Symphony Orchestra & Rafael Frühbeck de Burgos
+241;Felix Schmidt, London Symphony Orchestra & Rafael FrÃ¼hbeck de Burgos
 242;Edo de Waart & San Francisco Symphony
-243;Antal Doráti & London Symphony Orchestra
+243;Antal DorÃ¡ti & London Symphony Orchestra
 244;Choir Of Westminster Abbey & Simon Preston
 245;Michael Tilson Thomas & San Francisco Symphony
 246;Chor der Wiener Staatsoper, Herbert Von Karajan & Wiener Philharmoniker
@@ -260,12 +260,12 @@ Id;Name
 259;The 12 Cellists of The Berlin Philharmonic
 260;Adrian Leaper & Doreen de Feis
 261;Roger Norrington, London Classical Players
-262;Charles Dutoit & L'Orchestre Symphonique de Montréal
+262;Charles Dutoit & L'Orchestre Symphonique de MontrÃ©al
 263;Equale Brass Ensemble, John Eliot Gardiner & Munich Monteverdi Orchestra and Choir
-264;Kent Nagano and Orchestre de l'Opéra de Lyon
+264;Kent Nagano and Orchestre de l'OpÃ©ra de Lyon
 265;Julian Bream
 266;Martin Roscoe
-267;Göteborgs Symfoniker & Neeme Järvi
+267;GÃ¶teborgs Symfoniker & Neeme JÃ¤rvi
 268;Itzhak Perlman
 269;Michele Campanella
 270;Gerald Moore

@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace MusicStore.Adapters
 {
-    class GenericControllerAdapter<TContract, TEntity> : CommonBase.Client.IDataAccess<TContract>
+    class GenericControllerAdapter<TContract, TEntity> : Contracts.Client.IAdapterAccess<TContract>
         where TContract : Contracts.IIdentifiable
         where TEntity : TContract, Contracts.ICopyable<TContract>, new()
     {
-        public Logic.IController<TContract> controller;
+        public Contracts.Client.IControllerAccess<TContract> controller;
 
         public GenericControllerAdapter()
         {

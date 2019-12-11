@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MusicStore.Adapters
 {
-    class GenericServiceAdapter<TContract, TEntity> : CommonBase.Client.IDataAccess<TContract>
+    class GenericServiceAdapter<TContract, TEntity> : Contracts.Client.IAdapterAccess<TContract>
         where TContract : Contracts.IIdentifiable
         where TEntity : TContract, Contracts.ICopyable<TContract>, new()
     {

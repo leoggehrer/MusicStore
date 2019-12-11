@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
 namespace MusicStore.WebApi.Controllers
 {
-    public abstract class GenericController<I, M> : ControllerBase
+	public abstract class GenericController<I, M> : ControllerBase
         where M : Transfer.Models.TransferObject, I, Contracts.ICopyable<I>, new()
         where I : Contracts.IIdentifiable
     {
@@ -21,7 +20,7 @@ namespace MusicStore.WebApi.Controllers
 			string persistenceType = configuration["PersistenceType"];
 			Logic.Factory.Persistence = (Logic.Factory.PersistenceType)Enum.Parse(typeof(Logic.Factory.PersistenceType), persistenceType);
 		}
-		protected Logic.IController<I> CreateController()
+		protected Contracts.Client.IControllerAccess<I> CreateController()
         {
             return Logic.Factory.Create<I>();
         }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace MusicStore.ConApp
@@ -8,12 +10,12 @@ namespace MusicStore.ConApp
         static async Task Main(string[] args)
         {
             // Copy async
-            await CopyDataFromToByLogicAdapterAsync(Logic.Factory.PersistenceType.Csv, Adapters.Factory.AdapterType.Service);
+            //await CopyDataFromToByLogicAdapterAsync(Logic.Factory.PersistenceType.Csv, Adapters.Factory.AdapterType.Service);
             // Copy sync		
             //CopyDataFromToByLogic(Logic.Factory.PersistenceType.Csv, Logic.Factory.PersistenceType.Db);
 
             // Output async
-            await PrintDataAdapterAsync(Adapters.Factory.AdapterType.Service);
+            //await PrintDataAdapterAsync(Adapters.Factory.AdapterType.Service);
             // Output sync
             //PrintDataLogic(Logic.Factory.PersistenceType.Db);
         }
@@ -303,6 +305,30 @@ namespace MusicStore.ConApp
                 }
             }
         }
+
+		static void CleanCsvData(string path)
+		{
+			foreach (var file in System.IO.Directory.GetFiles(path))
+			{
+				string text = System.IO.File.ReadAllText(file, Encoding.UTF8);
+				StringBuilder sb = new StringBuilder();
+
+				text.ToList().ForEach(c =>
+				{
+					if (Char.IsWhiteSpace(c))
+						sb.Append(c);
+					else if (Char.IsPunctuation(c))
+						sb.Append(c);
+					else if (Char.IsDigit(c) || Char.IsLetter(c) || c == ',' || c == '.' || c== '!')
+						sb.Append(c);
+					else
+					{
+						sb.Append('#');
+					};
+				});
+				System.IO.File.WriteAllText(@"C:\Temp\CsvData\" + System.IO.Path.GetFileName(file), sb.ToString(), Encoding.UTF8);
+			}
+		}
     }
 }
 

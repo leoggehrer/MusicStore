@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace MusicStore.Logic.DataContext.Csv
 {
-    internal class CsvMusicStoreContext : MusicStoreFileContext
+    internal partial class CsvMusicStoreContext : MusicStoreFileContext
     {
         public CsvMusicStoreContext()
         {
@@ -23,18 +23,5 @@ namespace MusicStore.Logic.DataContext.Csv
             SaveToCsv(Tracks);
         }
         #endregion Sync-Methods
-
-        #region Async-Methods
-        public override Task SaveAsync()
-        {
-            return Task.Run(() =>
-            {
-                SaveToCsv(Genres);
-                SaveToCsv(Artists);
-                SaveToCsv(Albums);
-                SaveToCsv(Tracks);
-            });
-        }
-        #endregion Async-Methods
     }
 }

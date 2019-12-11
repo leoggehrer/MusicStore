@@ -3,18 +3,26 @@ using MusicStore.Contracts;
 
 namespace MusicStore.Logic.Entities.Persistence
 {
+    /// <inheritdoc />
     /// <summary>
-    /// Implements the properties and methods of identifiable model.
+    /// Implements the properties and methods of track model.
     /// </summary>
     [Serializable]
     partial class Track : IdentityObject, Contracts.Persistence.ITrack, ICopyable<Contracts.Persistence.ITrack>
     {
+        /// <inheritdoc />
         public int AlbumId { get; set; }
+        /// <inheritdoc />
         public int GenreId { get; set; }
+        /// <inheritdoc />
         public string Title { get; set; }
+        /// <inheritdoc />
         public string Composer { get; set; }
+        /// <inheritdoc />
         public long Milliseconds { get; set; }
+        /// <inheritdoc />
         public long Bytes { get; set; }
+        /// <inheritdoc />
         public double UnitPrice { get; set; }
 
         public void CopyProperties(Contracts.Persistence.ITrack other)

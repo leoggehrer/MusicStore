@@ -9,7 +9,7 @@ using MusicStore.Logic.Entities.Persistence;
 
 namespace MusicStore.Logic.DataContext.Db
 {
-    internal class DbMusicStoreContext : DbContext, IContext, IMusicStoreContext
+    internal partial class DbMusicStoreContext : DbContext, IContext, IMusicStoreContext
     {
         private static string ConnectionString { get; set; } = "Data Source=(localdb)\\MSSQLLocalDb;Database=MusicStoreDb;Integrated Security=True;";
 
@@ -81,6 +81,9 @@ namespace MusicStore.Logic.DataContext.Db
                 .Property(p => p.Title)
                 .IsRequired()
                 .HasMaxLength(1024);
+            modelBuilder.Entity<Track>()
+                .Property(p => p.Composer)
+                .HasMaxLength(512);
         }
         #endregion Configuration
 
@@ -177,46 +180,6 @@ namespace MusicStore.Logic.DataContext.Db
             base.SaveChanges();
         }
 		#endregion Sync-Methods
-
-		#region Async-Methods
-		// Falls die synchronen Methoden entfernt werden soll,
-		// dann werden diese private spezifiziert und aus dem 
-		// Interface entfernt.
-		public Task<int> CountAsync<I, E>()
-            where I : IIdentifiable
-            where E : IdentityObject, I
-        {
-            return Set<E>().CountAsync();
-        }
-        public Task<E> CreateAsync<I, E>()
-            where I : IIdentifiable
-            where E : IdentityObject, ICopyable<I>, I, new()
-        {
-            return Task.Run(() => Create<I, E>());
-        }
-        public Task<E> InsertAsync<I, E>(I entity)
-            where I : IIdentifiable
-            where E : IdentityObject, ICopyable<I>, I, new()
-        {
-			return Task.Run(() => Insert<I, E>(entity));
-        }
-        public Task<E> UpdateAsync<I, E>(I entity)
-            where I : IIdentifiable
-            where E : IdentityObject, ICopyable<I>, I, new()
-        {
-			return Task.Run(() => Update<I, E>(entity));
-        }
-        public Task<E> DeleteAsync<I, E>(int id)
-            where I : IIdentifiable
-            where E : IdentityObject, I
-        {
-			return Task.Run(() => Delete<I, E>(id));
-        }
-        public Task SaveAsync()
-        {
-            return Task.Run(() => base.SaveChangesAsync());
-        }
-        #endregion Async-Methods
         #endregion IContext
     }
 }

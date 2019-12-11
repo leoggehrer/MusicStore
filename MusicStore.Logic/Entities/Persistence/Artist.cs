@@ -4,13 +4,15 @@ using MusicStore.Contracts;
 
 namespace MusicStore.Logic.Entities.Persistence
 {
-    /// <summary>
-    /// Implements the properties and methods of identifiable model.
-    /// </summary>
-    [Serializable]
+	/// <inheritdoc />
+	/// <summary>
+	/// Implements the properties and methods of artist model.
+	/// </summary>
+	[Serializable]
     partial class Artist : IdentityObject, Contracts.Persistence.IArtist, ICopyable<Contracts.Persistence.IArtist>
     {
-        public string Name { get; set; }
+		/// <inheritdoc />
+		public string Name { get; set; }
 
 		public void CopyProperties(Contracts.Persistence.IArtist other)
 		{

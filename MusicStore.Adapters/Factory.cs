@@ -13,29 +13,29 @@ namespace MusicStore.Adapters
         }
         public static AdapterType Adapter { get; set; } = Factory.AdapterType.Controller;
 
-        public static CommonBase.Client.IDataAccess<TContract> Create<TContract>()
+        public static Contracts.Client.IAdapterAccess<TContract> Create<TContract>()
             where TContract : Contracts.IIdentifiable
         {
             string baseUri = "https://localhost:5001/api";
-            CommonBase.Client.IDataAccess<TContract> result = null;
+            Contracts.Client.IAdapterAccess<TContract> result = null;
 
             if (Adapter == AdapterType.Controller)
             {
                 if (typeof(TContract) == typeof(Contracts.Persistence.IGenre))
                 {
-                    result = (CommonBase.Client.IDataAccess<TContract>)new GenericControllerAdapter<Contracts.Persistence.IGenre, Transfer.Models.Persistence.Genre>();
+                    result = (Contracts.Client.IAdapterAccess<TContract>)new GenericControllerAdapter<Contracts.Persistence.IGenre, Transfer.Models.Persistence.Genre>();
                 }
                 else if (typeof(TContract) == typeof(Contracts.Persistence.IArtist))
                 {
-                    result = (CommonBase.Client.IDataAccess<TContract>)new GenericControllerAdapter<Contracts.Persistence.IArtist, Transfer.Models.Persistence.Artist>();
+                    result = (Contracts.Client.IAdapterAccess<TContract>)new GenericControllerAdapter<Contracts.Persistence.IArtist, Transfer.Models.Persistence.Artist>();
                 }
                 else if (typeof(TContract) == typeof(Contracts.Persistence.IAlbum))
                 {
-                    result = (CommonBase.Client.IDataAccess<TContract>)new GenericControllerAdapter<Contracts.Persistence.IAlbum, Transfer.Models.Persistence.Album>();
+                    result = (Contracts.Client.IAdapterAccess<TContract>)new GenericControllerAdapter<Contracts.Persistence.IAlbum, Transfer.Models.Persistence.Album>();
                 }
                 else if (typeof(TContract) == typeof(Contracts.Persistence.ITrack))
                 {
-                    result = (CommonBase.Client.IDataAccess<TContract>)new GenericControllerAdapter<Contracts.Persistence.ITrack, Transfer.Models.Persistence.Track>();
+                    result = (Contracts.Client.IAdapterAccess<TContract>)new GenericControllerAdapter<Contracts.Persistence.ITrack, Transfer.Models.Persistence.Track>();
                 }
                 else
                     throw new ArgumentException($"The type {typeof(TContract).FullName} is not supported.");
@@ -44,19 +44,19 @@ namespace MusicStore.Adapters
             {
                 if (typeof(TContract) == typeof(Contracts.Persistence.IGenre))
                 {
-                    result = (CommonBase.Client.IDataAccess<TContract>)new GenericServiceAdapter<Contracts.Persistence.IGenre, Transfer.Models.Persistence.Genre>(baseUri, "Genre");
+                    result = (Contracts.Client.IAdapterAccess<TContract>)new GenericServiceAdapter<Contracts.Persistence.IGenre, Transfer.Models.Persistence.Genre>(baseUri, "Genre");
                 }
                 else if (typeof(TContract) == typeof(Contracts.Persistence.IArtist))
                 {
-                    result = (CommonBase.Client.IDataAccess<TContract>)new GenericServiceAdapter<Contracts.Persistence.IArtist, Transfer.Models.Persistence.Artist>(baseUri, "Artist");
+                    result = (Contracts.Client.IAdapterAccess<TContract>)new GenericServiceAdapter<Contracts.Persistence.IArtist, Transfer.Models.Persistence.Artist>(baseUri, "Artist");
                 }
                 else if (typeof(TContract) == typeof(Contracts.Persistence.IAlbum))
                 {
-                    result = (CommonBase.Client.IDataAccess<TContract>)new GenericServiceAdapter<Contracts.Persistence.IAlbum, Transfer.Models.Persistence.Album>(baseUri, "Album");
+                    result = (Contracts.Client.IAdapterAccess<TContract>)new GenericServiceAdapter<Contracts.Persistence.IAlbum, Transfer.Models.Persistence.Album>(baseUri, "Album");
                 }
                 else if (typeof(TContract) == typeof(Contracts.Persistence.ITrack))
                 {
-                    result = (CommonBase.Client.IDataAccess<TContract>)new GenericServiceAdapter<Contracts.Persistence.ITrack, Transfer.Models.Persistence.Track>(baseUri, "Track");
+                    result = (Contracts.Client.IAdapterAccess<TContract>)new GenericServiceAdapter<Contracts.Persistence.ITrack, Transfer.Models.Persistence.Track>(baseUri, "Track");
                 }
                 else
                     throw new ArgumentException($"The type {typeof(TContract).FullName} is not supported.");
