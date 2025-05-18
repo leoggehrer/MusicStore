@@ -16,18 +16,18 @@
 
 Das Projekt **MusicStore** ist ein kleines datenzentriertes Anwendungsbeispiel mit welchem die Erstellung eines Software-Systems dargestellt werden soll. Aufgrund der Komplexität, die ein Software-System im Allgemeinem darstellt, ist die Erstellung des Beispiels in mehreren Themenbereichen unterteilt. Jedes Thema beginnt mit dieser Vorlage und wird entsprechend der jeweiligen Aufgabenstellung erweitert.
 
-Die Umsetzung kann auf verschiedene Arten erfolgen. Zum einen kann die Aufgabe manuell erfolgen. Das ist sehr aufwendig und nimmt sehr viel Zeit in Anspruch. Zum anderen kann die Umsetzung mit Hilfe der Vorlage **SETemplate** erfolgen. Das ist einfacher, erspart sehr Zeit und erhöht die Softwarequalität.
+Die Umsetzung kann auf verschiedene Arten erfolgen. Zum einen kann die Aufgabe manuell erfolgen. Das ist sehr aufwendig und nimmt viel Zeit in Anspruch. Zum anderen kann die Umsetzung mit Hilfe der Vorlage **SETemplate** erfolgen. Das ist einfacher, erspart sehr viel Zeit und erhöht die Softwarequalität.
 
 Die Vorlage **SETemplate** ist ein Template, welches die Erstellung von Software-Systemen unterstützt und basiert auf dem Konzept der **SEArchitecture**. Die Dokumentation zur **SEArchitecture** finden Sie [hier](https://github.com/leoggehrer/SEArchitecture) und die Dokumentation zur **SETemplate** finden Sie [hier](https://github.com/leoggehrer/SETemplate).
 
-Mit der Vorlage ist es möglich, einzelnen Themenbereiche zu erstellen und die entsprechenden Projekte zu generieren. In der Folgenden Tabelle sind die einzelnen Themenbereiche aufgelistet. Diese Themenbereiche sind in der Regel in einem eigenen Projekt bzw. in einen Repository abgelegt. Die nachfolgende Tabelle zeigt die einzelnen Themenbereiche und deren Beschreibung:
+Mit der Vorlage ist es möglich, einzelnen Themenbereiche zu erstellen und die entsprechenden Projekte zu generieren. Diese Themenbereiche sind in der Regel in einem eigenen Projekt bzw. in einen Repository abgelegt. Die nachfolgende Tabelle zeigt die einzelnen Themenbereiche und deren Beschreibung:
 
 | Thema/Ausbaustufe | Beschreibung        | Umsetzung | Projekt      | Anleitung |
 |-------------------|---------------------|-----------|--------------|-----------|
-| Datenstruktur     | Definieren die Datenstruktur und das Importieren der csv-Daten. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreBase | Eine Anleitung für die Erstellung einer Datenstruktur finden Sie [hier](https://github.com/leoggehrer/SEBookStore) |
-| Angular           | Erstellen von **Angular**-Formularen für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngular | In diesem Dokument. |
-| Angular-Statistik | Erstellen von **View** und Anzeigen in Tabellen. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngularStatistics | In diesem Dokument. |
-| Angular-Authentifizierung | Erstellen von **Zugriffrollen** für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**.  | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngularAuth | In Berbeitung. |
+| **Base**          | Definieren die Datenstruktur und das Importieren der csv-Daten. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreBase](https://github.com/leoggehrer/SEMusicStoreBase) | Eine Anleitung für die Erstellung einer Datenstruktur finden Sie [hier](https://github.com/leoggehrer/SEBookStore) |
+| **Angular**       | Erstellen von **Angular**-Formularen für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngular | In Bearbeitung |
+| **AngularStatistics** | Berechnen von Kennzahlen aus den Daten und in Tabellen anzeigen. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngularStatistics | In Bearbeitung |
+| **AngularAuth**   | Erstellen von **Zugriffrollen** für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**.  | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngularAuth | In Bearbeitung. |
 
 ---
 
@@ -37,7 +37,7 @@ Eine ausführliche Bedienungsanleitung für das Programm **TemplateTools** finde
 
 ## Datenstruktur
 
-Die Datenstruktur vom **SEMusicStore** ist einfach und besteht im wesentlichen aus 4 Komponenten welche in der folgenden Tabelle zusammengefasst sind:
+Die Datenstruktur vom **MusicStore** ist einfach und besteht im wesentlichen aus 4 Komponenten welche in der folgenden Tabelle zusammengefasst sind:
 
 | Komponente | Beschreibung | Datentyp | Mussfeld | Eindeutig |
 |------------|--------------|----------|----------|-----------|
