@@ -37,13 +37,13 @@ Eine ausführliche Bedienungsanleitung für das Programm **TemplateTools** finde
 
 ## Datenstruktur
 
-Die Datenstruktur vom **MusicStore** ist einfach und besteht im wesentlichen aus 4 Komponenten welche in der folgenden Tabelle zusammengefasst sind:
+Die Datenstruktur vom **MusicStore** ist einfach und besteht im Wesentlichen aus 4 Komponenten welche in der folgenden Tabelle zusammengefasst sind:
 
 | Komponente | Beschreibung | Datentyp | Mussfeld | Eindeutig |
 |------------|--------------|----------|----------|-----------|
 | **Artist** | Der Artist interpretiert und komponiert unterschiedlichste Musik-Titeln. Diese werden in einer oder mehreren Sammlung(en) (Album) zusammengefasst. | | | |
 | *Name*     | Name und des Artisten | Text [1024] | Ja | Ja |
-| **Album**  | Das Album beinhaltet eine Sammlung von Musik-Titeln (Track) und ist einem Artisten zugeortnet.|||
+| **Album**  | Das Album beinhaltet eine Sammlung von Musik-Titeln (Track) und ist einem Artisten zugeortnet.| | | |
 | *Title*    | Titel des Albums | Text [1024] | Ja | Ja |
 | *ArtistId* | Fremdschüssel zum Artisten | int | Ja | Nein |
 | **Genre**  | Das Genre definiert eine Musikrichtung und dient zur Klassifikation. Diese Information muss einem Musiktitel (Track) zugeordnet sein. | | | |
@@ -59,9 +59,9 @@ Die Datenstruktur vom **MusicStore** ist einfach und besteht im wesentlichen aus
 |**Hinweis:**| Alle Komponenten haben eine eindeutige Identität (**Id**) | | | |
 |*           | *Natürlich können noch weitere Attribute hinzugefügt werden.* | | | |
 
-Aus dieser Definition kann ein entsprechendes Objektmodell abgeleitet werden, welches nachfolgend skizziert ist:
+Aus dieser Definition kann ein entsprechendes Objektmodell abgeleitet werden, welches in der nachfolgend Abbildung dargestellt ist:
 
-![Objektmodel](img/musicstore.png)
+![Objektmodell](img/musicstore.png)
 
 ## Kennzahlen
 
@@ -83,7 +83,7 @@ Die Anzeige der einzelnen Kennzahlen erfolgt in einer Tabelle. Die Tabelle wird 
 | *Genre und Songs*      | Geben Sie das Genre (**Name**) und die Anzahl der Titeln aus. |
 | *Genre und Statistik*  | Gesamte Songzeit [Sekunden] eines Genre und die durchschnittliche Songzeit [Sekunden] aller Genres aus. |
 
-> **HINWEIS**: Verwenden Sie für die Berechnung der Kennzahlen **View** auf der Datenbank.
+> **HINWEIS**: Verwenden Sie für die Berechnung der Kennzahlen **Views** auf der Datenbank.
 
 ## Testen des Systems
 
