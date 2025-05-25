@@ -1,4 +1,4 @@
-﻿# MusicStore
+# MusicStore
 
 **Inhaltsverzeichnis:**
 
@@ -25,6 +25,8 @@ Mit der Vorlage ist es möglich, einzelnen Themenbereiche zu erstellen und die e
 | Thema/Ausbaustufe | Beschreibung        | Umsetzung | Projekt      | Anleitung |
 |-------------------|---------------------|-----------|--------------|-----------|
 | **Base**          | Definieren die Datenstruktur und das Importieren der csv-Daten. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreBase](https://github.com/leoggehrer/SEMusicStoreBase) | Eine Anleitung für die Erstellung einer Datenstruktur finden Sie [hier](https://github.com/leoggehrer/SEBookStore) |
+| **Angular**       | Erstellen von **Angular**-Formularen für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreAngular](https://github.com/leoggehrer/SEMusicStoreAngular) | Anleitung im Projekt |
+| **AngularStatistics** | Berechnen von Kennzahlen aus den Daten und in Tabellen anzeigen. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreAngularStatistics](https://github.com/leoggehrer/SEMusicStoreAngularStatistics) | Anleitung im Projekt |
 | **Angular**       | Erstellen von **Angular**-Formularen für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreAngular](https://github.com/leoggehrer/SEMusicStoreAngular) | In Bearbeitung |
 | **AngularStatistics** | Berechnen von Kennzahlen aus den Daten und in Tabellen anzeigen. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngularStatistics | In Bearbeitung |
 | **AngularAuth**   | Erstellen von **Zugriffrollen** für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**.  | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngularAuth | In Bearbeitung. |
@@ -75,7 +77,7 @@ Die Anzeige der einzelnen Kennzahlen erfolgt in einer Tabelle. Die Tabelle wird 
 |------------------------|-------------------------------------------|
 | *Artist und Album*     | Geben Sie den Artisten (**Name**) und die dazugehörigen Alben (**Title**) aus. |
 | *Artist und Songs*     | Geben Sie den Artisten (**Name**), die dazugehörigen Songs (**Title**) und das entsprechende Genre (**Name**) aus. |
-| *Artist und Statistik* | Geben Sie den Artisten (**Namen**), die Anzahl seiner Songs, die gesamte Songzeit [Sekunden] seiner Songs, und die durchschnittliche Songzeit [Sekunden] aller Songs aus. |
+| *Artist und Statistik* | Geben Sie den Artisten (**Name**), die Anzahl seiner Songs, die gesamte Songzeit [Sekunden] seiner Songs, und die durchschnittliche Songzeit [Sekunden] aller Songs aus. |
 | | |
 | *Album und Titeln*     | Geben Sie das Album (**Title**) und deren Songs (**Title**) aus. |
 | *Album und Statistik*  | Geben Sie das Album (**Title**), die Anzahl der Songs, die gesamte Songzeit [Sekunden] des Albums, und die durchschnittliche Songzeit [Sekunden] aller Alben aus. |
