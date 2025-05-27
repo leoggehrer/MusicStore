@@ -26,8 +26,8 @@ Mit der Vorlage ist es möglich, einzelnen Themenbereiche zu erstellen und die e
 |-------------------|---------------------|-----------|--------------|-----------|
 | **Base**          | Definieren die Datenstruktur und das Importieren der csv-Daten. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreBase](https://github.com/leoggehrer/SEMusicStoreBase) | Eine Anleitung für die Erstellung einer Datenstruktur finden Sie [hier](https://github.com/leoggehrer/SEBookStore) |
 | **Angular**       | Erstellen von **Angular**-Formularen für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreAngular](https://github.com/leoggehrer/SEMusicStoreAngular) | Anleitung im Projekt |
-| **AngularStatistics** | Berechnen von Kennzahlen aus den Daten und in Tabellen anzeigen. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreAngularStatistics](https://github.com/leoggehrer/SEMusicStoreAngularStatistics) | Anleitung im Projekt |
-| **AngularAuth**   | Erstellen von **Zugriffrollen** für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**.  | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngularAuth | In Bearbeitung. |
+| **Statistics** | Berechnen von Kennzahlen aus den Daten und in Tabellen anzeigen. | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | [SEMusicStoreAngularStatistics](https://github.com/leoggehrer/SEMusicStoreAngularStatistics) | Anleitung im Projekt |
+| **Authentifizierung**   | Erstellen von **Zugriffrollen** für die Entitäten **Genre**, **Artist**, **Album** und **Tracks**.  | [SEArchitecture](https://github.com/leoggehrer/SEArchitecture) / [SETemplate](https://github.com/leoggehrer/SETemplate) | SEMusicStoreAngularStatisticsAuth | In Bearbeitung. |
 
 ---
 
@@ -88,5 +88,22 @@ Die Anzeige der einzelnen Kennzahlen erfolgt in einer Tabelle. Die Tabelle wird 
 ## Testen des Systems
 
 Überprüfen Sie die Kennzahlen mit Excel!
+
+### Authentifizierung
+
+Im letzten Abschnitt wird das Thema **Authentifizierung** behandelt. Nähere Informationen zum Thema Authentifizierung finden Sie [hier](https://github.com/leoggehrer/SETemplate?tab=readme-ov-file#authentifizierung).
+
+In der folgenden Tabelle finden Sie die Definitionen der einzelnen Rollen und deren Möglichkeitetn:
+
+| Entität/Rolle | Anonym | SysAdmin | AppAdmin | AppUser |
+|---------------|--------|----------|----------|---------|
+| **Genre**     | ---    | **CRUD** | **CRUD** | **CRUD**| 
+
+
+
+| Rolle        | Entität     | Lesen | Erstellen | Ändern | Löschen |
+|--------------|-------------|-------|-----------|--------|---------|
+| **Anonym**   | **Genre**   | Y     | Y         | Y      | Y       | 
+| **SysAdmin** | **Genre**   | Y     | Y         | Y      | Y       | 
 
 > **Viel Erfolg!**
