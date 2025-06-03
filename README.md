@@ -9,6 +9,7 @@
   - [Kennzahlen](#kennzahlen)
     - [Auswertungen](#auswertungen)
   - [Testen des Systems](#testen-des-systems)
+    - [Authentifizierung](#authentifizierung)
 
 ---
 
@@ -95,15 +96,23 @@ Im letzten Abschnitt wird das Thema **Authentifizierung** behandelt. Nähere Inf
 
 In der folgenden Tabelle finden Sie die Definitionen der einzelnen Rollen und deren Möglichkeitetn:
 
-| Entität/Rolle | Anonym | SysAdmin | AppAdmin | AppUser |
-|---------------|--------|----------|----------|---------|
-| **Genre**     | ---    | **CRUD** | **CRUD** | **CRUD**| 
+| Entität/Rolle            | Anonym | SysAdmin | AppAdmin | AppManager | AppUser |
+|--------------------------|--------|----------|----------|------------|---------|
+| **Genre**                | ---    |   CRUD   |   CRUD   |   R        |  R      |
+| **Artist**               | ---    |   CRUD   |   CRUD   |   R        |  R      |
+| **Album**                | R      |   CRUD   |   CRUD   |   CRUD     |  RU     |
+| **Track**                | R      |   CRUD   |   CRUD   |   CRUD     |  RU     |
+| Statistik | | | | | |
+| **Artist und Album**     | ---    |   R      |   R      |   R        |  ---    |
+| **Artist und Songs**     | ---    |   R      |   R      |   R        |  ---    |
+| **Artist und Statistik** | ---    |   R      |   R      |   R        |  ---    |
+| Statistik | | | | | |
+| **Album und Titeln**     | ---    |   R      |   R      |   R        |  ---    |
+| **Album und Statistik**  | ---    |   R      |   R      |   R        |  ---    |
+| Statistik | | | | | |
+| **Genre und Songs**      | ---    |   R      |   R      |   R        |  ---    |
+| **Genre und Statistik**  | ---    |   R      |   R      |   R        |  ---    |
 
-
-
-| Rolle        | Entität     | Lesen | Erstellen | Ändern | Löschen |
-|--------------|-------------|-------|-----------|--------|---------|
-| **Anonym**   | **Genre**   | Y     | Y         | Y      | Y       | 
-| **SysAdmin** | **Genre**   | Y     | Y         | Y      | Y       | 
+**CRUD...** Create, Read, Update, Delete
 
 > **Viel Erfolg!**
